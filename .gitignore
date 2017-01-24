@@ -1,4 +1,4 @@
 # Created by .ignore support plugin (hsz.mobi)
 
-assets/certificates
+assets/certificates/*
 bower_components/
