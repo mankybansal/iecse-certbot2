@@ -92,5 +92,81 @@ a, a:visited, a:hover, a:link {
 
 .get-started-button {
     padding: 10px 15px 10px 15px !important;
-    margin-top: 100px;
+    margin-top: 100px !important;
+}
+
+.menu-container {
+    width: 100%;
+    padding: 50px;
+    margin-top: 30px;
+    box-sizing: border-box;
+    background: #F8F8F8;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.menu-option {
+    display: inline-block;
+    padding: 30px;
+    height: 200px;
+    box-sizing: border-box;
+    vertical-align: top;
+    width: 200px;
+    margin: 10px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation-delay: 1s;
+}
+
+.menu-icons {
+    margin-top: 30px;
+    font-size: 40px !important;
+    color: rgba(0, 0, 0, 0.3) !important;
+    margin-bottom: 20px;
+}
+
+.certbox-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 60px;
+    width: 100%;
+    background: cornflowerblue;
+}
+
+.certbot-header-logo {
+    position: fixed;
+    left: 50px;
+    height: 100px;
+    top: 20px;
+}
+
+.certbot-header-text {
+    position: fixed;
+    left: 150px;
+    height: 60px;
+    box-sizing: border-box;
+    padding: 14px 15px 14px 15px;
+    top: 30px;
+    background:  white;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.1);
+    font-size: 30px;
+    font-family: Roboto-Light,sans-serif;
+    border-radius: 5px;
+}
+
+
+.certbot-header-logout {
+    position: fixed;
+    right: 60px;
+    height: 50px;
+    color: white;
+    background: #FF4081;
+    box-sizing: border-box;
+    padding: 18px 15px 17px 15px;
+    top: 35px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.1);
+    font-size: 15px;
+    font-family: Roboto-Regular,sans-serif;
+    border-radius: 5px;
 }

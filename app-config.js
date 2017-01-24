@@ -15,12 +15,14 @@ var certbot = {
 
 certbot.angular = angular.module('certbot', ['ngRoute', 'ngMaterial']);
 
-
 certbot.angular.config(function ($routeProvider) {
     $routeProvider
         .when("/", {
             templateUrl: "templates/home.html",
             controller: "homeControl"
+        }).when("/quickstart", {
+            templateUrl: "templates/quickstart.html",
+            controller: "quickstartControl"
         })
         .otherwise({
             templateUrl: "templates/not-found.html",

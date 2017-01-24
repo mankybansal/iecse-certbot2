@@ -3,6 +3,10 @@ certbot.angular.controller("homeControl", function ($scope) {
 
 });
 
+certbot.angular.controller("quickstartControl", function ($scope) {
+
+});
+
 certbot.angular.controller("notFoundControl", function ($scope) {
 
 });
@@ -10,7 +14,7 @@ certbot.angular.controller("notFoundControl", function ($scope) {
 certbot.angular.directive('certbotControl', function () {
 
     return {
-        controller: function ($scope) {
+        controller: function ($scope, $location) {
 
             $scope.safeApply = function (fn) {
                 var phase = this.$root.$$phase;
@@ -67,6 +71,9 @@ certbot.angular.directive('certbotControl', function () {
                 }
             };
 
+            $scope.myRouter = function(myRoute){
+                $location.path(myRoute);
+            };
 
             $scope.init = function () {
                 $scope.serverSelect();
