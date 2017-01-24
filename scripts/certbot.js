@@ -138,9 +138,9 @@ certbot.angular.directive('userControl', function () {
                 $scope.ngMyUser = false;
                 $scope.accountOptions = false;
                 $scope.guest = {};
-                casanylaApp.currentUser = null;
+                certbot.currentUser = null;
 
-                if (casanylaApp.requireLogin) {
+                if (certbot.requireLogin) {
                     $scope.requireLogin = true;
                     setTimeout(function () {
                         $('.loginOverlay').fadeIn(500);

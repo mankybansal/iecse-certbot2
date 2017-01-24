@@ -13,7 +13,7 @@ var certbot = {
     }
 };
 
-certbot.angular = angular.module('certbot', ['ngRoute']);
+certbot.angular = angular.module('certbot', ['ngRoute', 'ngMaterial']);
 
 
 certbot.angular.config(function ($routeProvider) {

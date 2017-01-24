@@ -20,6 +20,7 @@
     "font-awesome": "^4.7.0",
     "angular-route": "^1.6.1",
     "animate.css": "^3.5.2",
-    "roboto-fontface": "^0.7.0"
+    "roboto-fontface": "^0.7.0",
+    "angular-material": "^1.1.1"
   }
 }
