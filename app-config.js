@@ -13,7 +13,24 @@ var certbot = {
     }
 };
 
-certbot.angular = angular.module('certbot', ['ngRoute', 'ngMaterial']);
+certbot.angular = angular.module('certbot', ['ngRoute', 'ngMaterial'])
+    .config(function($mdThemingProvider) {
+        $mdThemingProvider.theme('default')
+            .primaryPalette('indigo')
+            .accentPalette('pink');
+    });
+
+certbot.angular.factory('$myElementInkRipple', function($mdInkRipple) {
+    return {
+        attach: function (scope, element, options) {
+            return $mdInkRipple.attach(scope, element, angular.extend({
+                center: false,
+                dimBackground: true
+            }, options));
+        }
+    };
+});
+
 
 certbot.angular.config(function ($routeProvider) {
     $routeProvider
@@ -29,5 +46,4 @@ certbot.angular.config(function ($routeProvider) {
             controller: "notFoundControl"
         });
 });
-
 

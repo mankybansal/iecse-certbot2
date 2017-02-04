@@ -14,7 +14,7 @@ certbot.angular.controller("notFoundControl", function ($scope) {
 certbot.angular.directive('certbotControl', function () {
 
     return {
-        controller: function ($scope, $location) {
+        controller: function ($scope, $location, $myElementInkRipple) {
 
             $scope.safeApply = function (fn) {
                 var phase = this.$root.$$phase;
@@ -23,6 +23,10 @@ certbot.angular.directive('certbotControl', function () {
                         fn();
                 } else
                     this.$apply(fn);
+            };
+
+            $scope.onClick = function (ev) {
+                $myElementInkRipple.attach($scope, angular.element(ev.target), { center: true });
             };
 
             $scope.serverRequest = function (requestType, url, data, callback, content) {
